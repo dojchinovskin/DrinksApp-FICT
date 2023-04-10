@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q5x-wq-syw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fFH-mv-XSS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -17,59 +17,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFi-z6-ekd">
-                                <rect key="frame" x="50" y="733" width="293" height="35"/>
+                                <rect key="frame" x="50" y="684" width="293" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Press here"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select drink"/>
                                 <connections>
                                     <action selector="navigateToDetails" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJ6-85-NnC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you press this button, it will take you to the next screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIa-g0-z60">
-                                <rect key="frame" x="20" y="672.33333333333337" width="353" height="40.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your drink" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIa-g0-z60">
+                                <rect key="frame" x="20" y="643.66666666666663" width="353" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I1e-aV-Xln">
-                                <rect key="frame" x="146.66666666666666" y="152.66666666666666" width="100" height="99.666666666666686"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="AOv-ua-eYg"/>
-                                    <constraint firstAttribute="height" constant="100" id="WmZ-bH-40c"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsP-3j-VbF">
-                                <rect key="frame" x="20" y="273" width="353" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Change color"/>
-                                <connections>
-                                    <action selector="changeImageViewColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ub-We-SpF"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-AY-Oif">
+                                <rect key="frame" x="16" y="348.66666666666669" width="361" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KIa-g0-z60" secondAttribute="trailing" constant="20" id="4nV-7T-9Eu"/>
+                            <constraint firstItem="wjM-AY-Oif" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6sb-PG-WuG"/>
                             <constraint firstItem="QFi-z6-ekd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AKP-cV-s40"/>
-                            <constraint firstItem="I1e-aV-Xln" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FDD-wx-HNY"/>
                             <constraint firstItem="KIa-g0-z60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MQj-gE-aXv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UsP-3j-VbF" secondAttribute="trailing" constant="20" id="Qsq-c6-Zsf"/>
-                            <constraint firstItem="UsP-3j-VbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QxQ-1i-RbS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QFi-z6-ekd" secondAttribute="trailing" constant="50" id="Xdw-Se-RqZ"/>
+                            <constraint firstItem="wjM-AY-Oif" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="c6h-y2-oQt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QFi-z6-ekd" secondAttribute="bottom" constant="50" id="deV-Kx-DBF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wjM-AY-Oif" secondAttribute="trailing" constant="16" id="i6p-Bx-Xzq"/>
                             <constraint firstItem="QFi-z6-ekd" firstAttribute="top" secondItem="KIa-g0-z60" secondAttribute="bottom" constant="20" id="kTH-5I-UTr"/>
-                            <constraint firstItem="UsP-3j-VbF" firstAttribute="top" secondItem="I1e-aV-Xln" secondAttribute="bottom" constant="20" id="qn1-EX-ykE"/>
-                            <constraint firstItem="I1e-aV-Xln" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uM9-Wd-1wj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h6x-WM-eoZ"/>
-                    <connections>
-                        <outlet property="imageView" destination="I1e-aV-Xln" id="mB0-DL-402"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2785.4961832061067" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1166" y="790"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cti-Ch-st4">
+            <objects>
+                <viewController id="yhE-ae-EgK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ibu-P1-QqG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3ct-r1-zd5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LVb-Ab-RN6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uA9-MI-vLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401" y="775"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="5wK-7U-bHF">
@@ -140,12 +142,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZx-gv-Xfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3852.6717557251909" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1131" y="1542"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="amt-bi-QVE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q5x-wq-syw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="wineglass" catalog="system" selectedImage="wineglass.fill" id="6lA-nq-eMr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b0q-6a-xjW">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -158,11 +161,52 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52n-mE-pbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858.7786259541983" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1167" y="-14"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="E2N-GP-SyT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="fFH-mv-XSS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="z78-AB-837"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zgO-gi-yCm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="q5x-wq-syw" kind="relationship" relationship="viewControllers" id="BWZ-Yu-2BV"/>
+                        <segue destination="4lK-9y-k4m" kind="relationship" relationship="viewControllers" id="FPo-SK-3qC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1F-oZ-roJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766" y="-751"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="u2O-dr-LUT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4lK-9y-k4m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="bh9-uh-yOY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VcF-h5-OwS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yhE-ae-EgK" kind="relationship" relationship="rootViewController" id="N9R-yK-k3V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXt-Z8-gEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2401" y="-14"/>
         </scene>
     </scenes>
     <resources>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="wineglass" catalog="system" width="95" height="128"/>
+        <image name="wineglass.fill" catalog="system" width="95" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

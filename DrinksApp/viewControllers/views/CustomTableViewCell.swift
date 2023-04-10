@@ -13,8 +13,8 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var customImageView: UIImageView!
     
-    func setup(item: MyItem) {
-        customTitleLabel.text = item.title
+    func setup(item: Drink) {
+        customTitleLabel.text = item.name
         customImageView.image = item.image
     }
     

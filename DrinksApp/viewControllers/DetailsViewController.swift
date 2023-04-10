@@ -11,17 +11,12 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private var data: [MyItem] = [
-        MyItem(title: "Title 1", image: UIImage(systemName: "star")!),
-        MyItem(title: "Title 2", image: UIImage(systemName: "star.fill")!),
-        MyItem(title: "Title 3", image: UIImage(systemName: "star")!),
-        MyItem(title: "Title 4", image: UIImage(systemName: "star.fill")!)
-    ]
+    private var data: [Drink] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        data = Drink.getDrinks()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

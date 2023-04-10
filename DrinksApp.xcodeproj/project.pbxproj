@@ -15,7 +15,7 @@
 		9569962D29BF30AD00D57A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9569962B29BF30AD00D57A89 /* LaunchScreen.storyboard */; };
 		9569963529BF39AC00D57A89 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569963429BF39AC00D57A89 /* DetailsViewController.swift */; };
 		95A4AA8129C8795B00AA2166 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4AA8029C8795B00AA2166 /* CustomTableViewCell.swift */; };
-		95A4AAA429D19B4800AA2166 /* MyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4AAA329D19B4800AA2166 /* MyItem.swift */; };
+		95AD4D9D29E415BC00E653F0 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD4D9C29E415BC00E653F0 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		9569962E29BF30AD00D57A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569963429BF39AC00D57A89 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		95A4AA8029C8795B00AA2166 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		95A4AAA329D19B4800AA2166 /* MyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItem.swift; sourceTree = "<group>"; };
+		95AD4D9C29E415BC00E653F0 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +64,56 @@
 			children = (
 				9569962029BF30A800D57A89 /* AppDelegate.swift */,
 				9569962229BF30A800D57A89 /* SceneDelegate.swift */,
-				9569962429BF30A800D57A89 /* ViewController.swift */,
-				9569962629BF30A800D57A89 /* Main.storyboard */,
-				9569962929BF30AD00D57A89 /* Assets.xcassets */,
-				9569962B29BF30AD00D57A89 /* LaunchScreen.storyboard */,
-				9569962E29BF30AD00D57A89 /* Info.plist */,
-				9569963429BF39AC00D57A89 /* DetailsViewController.swift */,
-				95A4AA8029C8795B00AA2166 /* CustomTableViewCell.swift */,
-				95A4AAA329D19B4800AA2166 /* MyItem.swift */,
+				95AD4D9B29E4159F00E653F0 /* models */,
+				95AD4D9E29E41B1800E653F0 /* viewControllers */,
+				95AD4DA029E41B4F00E653F0 /* storyboards */,
+				95AD4D9F29E41B2A00E653F0 /* resources */,
 			);
 			path = DrinksApp;
+			sourceTree = "<group>";
+		};
+		95AD4D9B29E4159F00E653F0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				95AD4D9C29E415BC00E653F0 /* Drink.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		95AD4D9E29E41B1800E653F0 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95AD4DA129E41B6200E653F0 /* views */,
+				9569962429BF30A800D57A89 /* ViewController.swift */,
+				9569963429BF39AC00D57A89 /* DetailsViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		95AD4D9F29E41B2A00E653F0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9569962929BF30AD00D57A89 /* Assets.xcassets */,
+				9569962E29BF30AD00D57A89 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		95AD4DA029E41B4F00E653F0 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9569962B29BF30AD00D57A89 /* LaunchScreen.storyboard */,
+				9569962629BF30A800D57A89 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		95AD4DA129E41B6200E653F0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				95A4AA8029C8795B00AA2166 /* CustomTableViewCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +191,7 @@
 				95A4AA8129C8795B00AA2166 /* CustomTableViewCell.swift in Sources */,
 				9569962129BF30A800D57A89 /* AppDelegate.swift in Sources */,
 				9569962329BF30A800D57A89 /* SceneDelegate.swift in Sources */,
-				95A4AAA429D19B4800AA2166 /* MyItem.swift in Sources */,
+				95AD4D9D29E415BC00E653F0 /* Drink.swift in Sources */,
 				9569963529BF39AC00D57A89 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
