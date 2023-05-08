@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9504371E29F6848900F7241B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9504371D29F6848900F7241B /* Login.storyboard */; };
+		9504372129F6884000F7241B /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504372029F6884000F7241B /* MainContext.swift */; };
+		9504372329F68EDC00F7241B /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504372229F68EDC00F7241B /* UserDefaultsRepository.swift */; };
 		9569962129BF30A800D57A89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569962029BF30A800D57A89 /* AppDelegate.swift */; };
-		9569962329BF30A800D57A89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569962229BF30A800D57A89 /* SceneDelegate.swift */; };
 		9569962529BF30A800D57A89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569962429BF30A800D57A89 /* ViewController.swift */; };
 		9569962829BF30A800D57A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9569962629BF30A800D57A89 /* Main.storyboard */; };
 		9569962A29BF30AD00D57A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9569962929BF30AD00D57A89 /* Assets.xcassets */; };
@@ -19,9 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9504371D29F6848900F7241B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9504372029F6884000F7241B /* MainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
+		9504372229F68EDC00F7241B /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
 		9569961D29BF30A800D57A89 /* DrinksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9569962029BF30A800D57A89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9569962229BF30A800D57A89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9569962429BF30A800D57A89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9569962729BF30A800D57A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9569962929BF30AD00D57A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9504371F29F6881200F7241B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				9504372029F6884000F7241B /* MainContext.swift */,
+				9504372229F68EDC00F7241B /* UserDefaultsRepository.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		9569961429BF30A800D57A89 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				9569962029BF30A800D57A89 /* AppDelegate.swift */,
-				9569962229BF30A800D57A89 /* SceneDelegate.swift */,
 				95AD4D9B29E4159F00E653F0 /* models */,
 				95AD4D9E29E41B1800E653F0 /* viewControllers */,
 				95AD4DA029E41B4F00E653F0 /* storyboards */,
 				95AD4D9F29E41B2A00E653F0 /* resources */,
+				9504371F29F6881200F7241B /* util */,
 			);
 			path = DrinksApp;
 			sourceTree = "<group>";
@@ -104,6 +117,7 @@
 			children = (
 				9569962B29BF30AD00D57A89 /* LaunchScreen.storyboard */,
 				9569962629BF30A800D57A89 /* Main.storyboard */,
+				9504371D29F6848900F7241B /* Login.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -174,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9504371E29F6848900F7241B /* Login.storyboard in Resources */,
 				9569962D29BF30AD00D57A89 /* LaunchScreen.storyboard in Resources */,
 				9569962A29BF30AD00D57A89 /* Assets.xcassets in Resources */,
 				9569962829BF30A800D57A89 /* Main.storyboard in Resources */,
@@ -190,8 +205,9 @@
 				9569962529BF30A800D57A89 /* ViewController.swift in Sources */,
 				95A4AA8129C8795B00AA2166 /* CustomTableViewCell.swift in Sources */,
 				9569962129BF30A800D57A89 /* AppDelegate.swift in Sources */,
-				9569962329BF30A800D57A89 /* SceneDelegate.swift in Sources */,
 				95AD4D9D29E415BC00E653F0 /* Drink.swift in Sources */,
+				9504372329F68EDC00F7241B /* UserDefaultsRepository.swift in Sources */,
+				9504372129F6884000F7241B /* MainContext.swift in Sources */,
 				9569963529BF39AC00D57A89 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GQZSQ6QRB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DrinksApp/Info.plist;
+				INFOPLIST_FILE = DrinksApp/resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -369,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GQZSQ6QRB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DrinksApp/Info.plist;
+				INFOPLIST_FILE = DrinksApp/resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
