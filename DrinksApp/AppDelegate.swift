@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        MainContext.createRootView(isUserLoggedIn: false)
+        MainContext.createRootView(isUserLoggedIn: true)
         return true
     }
 
